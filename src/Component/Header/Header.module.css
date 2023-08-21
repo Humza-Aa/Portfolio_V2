@@ -36,7 +36,7 @@
 .linkDiv > a {
   font-size: 1.5rem;
   font-weight: 400;
-  color: var(--Text);
+  color: var(--LBI);
   text-decoration: none;
 
 }

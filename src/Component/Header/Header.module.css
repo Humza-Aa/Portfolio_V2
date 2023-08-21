@@ -1,0 +1,63 @@
+.headerDiv {
+  color: #05f3ff;
+  padding: 10px 7%;
+  
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.linksDiv {
+  display: flex;
+  gap: 50px;
+  /* padding: 0 10px; */
+}
+
+.linkDiv {
+  /* padding: 5px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkDiv > img {
+  width: 30px;
+  height: 30px;
+}
+
+.linkDiv > a {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--Text);
+  text-decoration: none;
+
+}
+
+.linkDiv {
+  position: relative;
+  overflow: hidden;
+}
+
+.linkDiv > a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 5px; 
+  background-color: var(--Text);
+  transition: width 0.3s ease;
+  border-radius: 10px;
+}
+
+.linkDiv > a:hover::after {
+  width: 100%; /* Full width on hover */
+}

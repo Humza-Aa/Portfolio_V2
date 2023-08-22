@@ -41,6 +41,10 @@
 
 }
 
+.linkDiv > a:hover {
+  color: #05f3ff;
+}
+
 .linkDiv {
   position: relative;
   overflow: hidden;

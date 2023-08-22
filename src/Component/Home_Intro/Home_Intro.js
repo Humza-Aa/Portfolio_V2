@@ -11,13 +11,16 @@ export default function Home_Intro() {
           <div> Humza Aamir </div>
           <div>
             <ReactTyped
-              strings={["Developer", "Software Developer", "AI Enthusiast", "UX/UI Designer", "Web Developer"]}
+              strings={["Developer", "Software Developer", "AI Enthusiast", "Full Stack Developer", "UX/UI Designer", "Web Developer"]}
               typeSpeed={100}
               loop
               backSpeed={20}
-              // cursorChar=">"
+              // cursorChar=")"
               showCursor={true}
             />
+            <div>
+
+            </div>
           </div>
         </div>
         <div className={styles.homeRightSide}>

@@ -7,7 +7,7 @@ export default function Home_Intro() {
     <>
       <div className={styles.homeDiv}>
         <div className={styles.homeLeftSide}>
-          <div>Hello, I my name is</div>
+          <div>Hello, my name is</div>
           <div> Humza Aamir </div>
           <div>
             <ReactTyped
@@ -18,9 +18,7 @@ export default function Home_Intro() {
               // cursorChar=")"
               showCursor={true}
             />
-            <div>
 
-            </div>
           </div>
         </div>
         <div className={styles.homeRightSide}>

@@ -1,0 +1,27 @@
+.skillSet {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  height: 100vh;
+  padding: 4% 10% 0 10%;
+  gap: 1.2rem;
+}
+
+.skillTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.skillTitle > div:first-child {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.skillSetDiv {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}

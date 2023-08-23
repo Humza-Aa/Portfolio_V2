@@ -43,4 +43,5 @@
 .animationDiv {
   width: 30rem;
   height: 30rem;
+  z-index: -1;
 }

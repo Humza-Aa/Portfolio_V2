@@ -1,0 +1,44 @@
+.homeSumDiv {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  height: 100vh;
+  padding: 4% 10% 0 10%;
+  gap: 1.2rem;
+}
+
+.aboutTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.aboutTitle > div:first-child {
+  color: var(--LBI);
+  font-weight: 500;
+}
+
+.aboutTitle > div:nth-child(2) {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.aboutDescription {
+  display: flex;
+  gap: 7rem;
+  color: var(--LBI);
+}
+
+.aboutDescription > div:first-child {
+  padding: 3rem 0 0 0;
+}
+
+.profilePic > img {
+  max-width: 30rem;
+  border-radius: 10px;
+  /* filter: drop-shadow(0 0 8px 8px #222831);
+  -webkit-filter: drop-shadow(0 0 8px 8px #222831); */
+  -webkit-filter: drop-shadow(5px 5px 5px #666666);
+  filter: drop-shadow(5px 5px 5px #666666);
+  z-index: -1;
+}

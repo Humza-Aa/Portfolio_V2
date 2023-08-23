@@ -1,0 +1,30 @@
+.ExpDiv {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  height: 100vh;
+  padding: 4% 10% 0 10%;
+  gap: 1.2rem;
+}
+
+.expTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.expTitle > div:first-child {
+  color: var(--LBI);
+  font-weight: 500;
+}
+
+.expTitle > div:nth-child(2) {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.workListingDiv {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}

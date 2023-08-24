@@ -1,4 +1,5 @@
 import styles from "./Experience.module.css";
+import WorkLayout from "./WorkLayout/WorkLayout";
 
 export default function Experience() {
   return(
@@ -8,8 +9,7 @@ export default function Experience() {
           <div>Experience</div>
           <div>My Professional Journey</div>
           <div className={styles.workListingDiv}>
-            <div>Work Places</div>
-            <div>Description</div>
+            <WorkLayout />
           </div>
         </div>
       </div>

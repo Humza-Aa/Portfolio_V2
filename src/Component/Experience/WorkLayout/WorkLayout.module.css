@@ -16,6 +16,8 @@
 
 .WorkPlace:hover {
   cursor: pointer;
+  background-color: #b3b3b317;
+  border-radius: 10px;
 }
 .workLayout {
   display: flex;

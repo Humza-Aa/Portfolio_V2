@@ -6,7 +6,7 @@ export default function Experience() {
     <>
       <div className={styles.ExpDiv}>
         <div className={styles.expTitle}>
-          <div>Experience</div>
+          <div>EXPERIENCE</div>
           <div>My Professional Journey</div>
           <div className={styles.workListingDiv}>
             <WorkLayout />

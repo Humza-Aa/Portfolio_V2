@@ -5,6 +5,7 @@ import HomeIntro from './Component/Home_Intro/Home_Intro';
 import HomeSummary from './Component/Home_Summary/Home_Summary';
 import AboutTools from './Component/About_Tools/AboutTools';
 import Experience from './Component/Experience/Experience';
+import Work from './Component/Work/Work';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <HomeSummary />
       <AboutTools />
       <Experience />
+      <Work />
     </>
   );
 }

@@ -1,10 +1,8 @@
 .projectsDiv {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  height: 100vh;
   padding: 4% 10% 0 10%;
-  gap: 1.2rem;
+  gap: 4rem;
 }
 
 .projectsTitle {
@@ -23,34 +21,101 @@
   font-weight: 600;
 }
 
+.projectsLists {
+  display: flex; 
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;  
+}
+
 .projectDiv {
   display: flex;
-  padding: 3rem 0 3rem 3rem;
-  gap: 3rem;
+  flex-direction: row;
   border: 2px solid var(--Secondary_background);
   border-radius: 10px;
+  height: fit-content;
+  padding: 10px;
+  box-shadow: 0 5px 5px #666666;
 }
 
 .projectImg {
   display: flex;
-  justify-content: center;
   align-items: center;
+  /* height: fit-content; */
+  /* width: 10em; */
+}
+
+.projectImg > img {
+ width: 100%;
+ border-radius: 10px;
+}
+
+.projectInfo {
+  display: flex;
+  flex-direction: column;
 }
 
 .projectTitle {
   font-size: 30px;
   font-weight: 600;
   color: var(--LBI);
-  padding: 0 0 1.2rem 0;
+  padding: 0 0 1.2rem 1.2rem;
 }
 
 .projectInfoInner {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 0 0 0 1rem;
+  padding: 0 0 0 2rem;
+  color: #b4afaf;
 }
 
-.githubLink {
-  width: 30px;
+.projectDescript {
+  color: var(--Text);
+}
+
+.LinksIcons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0 0 0;
+}
+
+.toolsImg{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+}
+.toolsImg > img {
+  width: 35px;
+}
+
+.githubLink, .liveLinkDiv {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  gap: 10px;
+  background-color: #666666;
+  padding: 10px;
+}
+
+.githubLink > svg{
+  width: 25px;
+  height: 25px;
+}
+
+.githubLink > div, .liveLinkDiv > div {
+  font-weight: 600;
+  color: var(--LBI)
+}
+
+.liveLink {
+  width: 22px;
+  height: 22px;
+  color: var(--LBI);
+}
+
+.githubLink:hover, .liveLinkDiv:hover {
+  cursor: pointer;
 }

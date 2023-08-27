@@ -1,0 +1,96 @@
+.OtherPrjtMain {
+  display: flex;
+  gap: 20px;
+}
+
+.OtherPrjtDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 30%;
+  padding: 15px;
+  box-shadow: 0 5px 5px #666666;
+  border-radius: 10px;
+}
+
+.projectName {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--LBI);
+}
+
+.innerDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.tools {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0 0 0;
+}
+
+.toolImg {
+  width: 30px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.Prjtlinks {
+  text-decoration: none;
+}
+
+.githubLink > div {
+  font-weight: 600;
+  color: var(--LBI)
+}
+
+.githubLink {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  gap: 10px;
+  background-color: #666666;
+  padding: 10px;
+}
+
+.githubLink:hover {
+  cursor: pointer;
+  background-color: rgb(136, 134, 134);
+}
+
+.githubLink > svg{
+  width: 25px;
+  height: 25px;
+}
+
+.morePrjectDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.morePrjectDiv > a {
+  text-decoration: none;
+}
+
+.moreProjBtn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: #666666;
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--LBI);
+}
+
+.moreProjBtn:hover {
+  cursor: pointer;
+  background-color: rgb(136, 134, 134);
+}

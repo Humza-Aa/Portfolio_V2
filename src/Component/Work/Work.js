@@ -1,60 +1,10 @@
 import styles from "./Work.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-import CrimeVue from "./App_Images/CrimeVue.png";
+import { projects } from "./Data/ProjectData";
+import OtherProjects from "./OtherProjects/OtherProjects";
 
 export default function Work() {
-  const projects = [
-    {
-      name: "CrimeVue",
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Quibusdam delectus animi veniam deleniti libero doloribus
-      sunt, beatae totam ullam quos dolore, laboriosam omnis
-      sapiente nam fuga dolores excepturi, reprehenderit dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Quibusdam delectus animi veniam deleniti libero doloribus
-      sunt, beatae totam ullam quos dolore, laboriosam omnis
-      sapiente nam fuga dolores excepturi, reprehenderit dolor.`,
-      img: CrimeVue,
-      tools: [
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-        // "Vercel",
-      ],
-      links: {
-        github: "https://github.com/Humza-Aa/Ontario_Crime_Mapper",
-        Live: "https://crimevue.vercel.app/",
-      },
-    },
-    {
-      name: "CrimeVue",
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Quibusdam delectus animi veniam deleniti libero doloribus
-      sunt, beatae totam ullam quos dolore, laboriosam omnis
-      sapiente nam fuga dolores excepturi, reprehenderit dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Quibusdam delectus animi veniam deleniti libero doloribus
-      sunt, beatae totam ullam quos dolore, laboriosam omnis
-      sapiente nam fuga dolores excepturi, reprehenderit dolor.`,
-      img: CrimeVue,
-      tools: [
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-        // "Vercel",
-      ],
-      links: {
-        github: "https://github.com/Humza-Aa/Ontario_Crime_Mapper",
-        Live: "https://crimevue.vercel.app/",
-      },
-    },
-  ];
-
   return (
     <>
       <div className={styles.projectsDiv}>
@@ -86,7 +36,12 @@ export default function Work() {
                         })}
                       </div>
                       <div className={styles.LinksIcons}>
-                        <a href={project.links.github}>
+                        <a
+                          target="_blank"
+                          rel="noreferrer"
+                          className={styles.Prjtlinks}
+                          href={project.links.github}
+                        >
                           <div className={styles.githubLink}>
                             <svg viewBox="0 0 128 128">
                               <g fill="white">
@@ -101,7 +56,12 @@ export default function Work() {
                             <div>GitHub</div>
                           </div>
                         </a>
-                        <a href={project.links.Live}>
+                        <a
+                          target="_blank"
+                          rel="noreferrer"
+                          className={styles.Prjtlinks}
+                          href={project.links.Live}
+                        >
                           <div className={styles.liveLinkDiv}>
                             <FontAwesomeIcon
                               className={styles.liveLink}
@@ -118,6 +78,7 @@ export default function Work() {
             );
           })}
         </div>
+        <OtherProjects />
       </div>
     </>
   );

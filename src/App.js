@@ -6,6 +6,7 @@ import HomeSummary from './Component/Home_Summary/Home_Summary';
 import AboutTools from './Component/About_Tools/AboutTools';
 import Experience from './Component/Experience/Experience';
 import Work from './Component/Work/Work';
+import Contact from './Component/Contact/Contact';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <AboutTools />
       <Experience />
       <Work />
+      <Contact />
     </>
   );
 }

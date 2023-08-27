@@ -31,11 +31,11 @@
 .projectDiv {
   display: flex;
   flex-direction: row;
-  border: 2px solid var(--Secondary_background);
+  /* border: 2px solid var(--Secondary_background); */
   border-radius: 10px;
   height: fit-content;
   padding: 10px;
-  box-shadow: 0 5px 5px #666666;
+  /* box-shadow: 0 5px 5px #666666; */
 }
 
 .projectImg {

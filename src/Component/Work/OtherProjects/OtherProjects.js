@@ -6,6 +6,7 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 export default function OtherProjects() {
   return (
     <>
+      <div className={styles.title}>Other Projects</div>
       <div className={styles.OtherPrjtMain}>
         {smallProjects.map((project, key) => {
           return (

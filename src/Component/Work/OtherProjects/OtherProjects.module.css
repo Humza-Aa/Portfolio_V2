@@ -14,6 +14,10 @@
   justify-content: center;
 }
 
+.projectName {
+  
+}
+
 .OtherPrjtDiv {
   display: flex;
   flex-direction: column;
@@ -25,6 +29,7 @@
   /* box-shadow: 0 5px 5px #666666; */
   border-radius: 10px;
   background-color: #3e495a8d;
+  color: var(--LBI);
 }
 
 .projectName {

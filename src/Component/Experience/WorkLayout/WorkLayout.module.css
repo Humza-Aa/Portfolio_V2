@@ -54,6 +54,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.1rem;
+  color: var(--LBI);
   /* list-style-type: "🔔";  */
 }
 

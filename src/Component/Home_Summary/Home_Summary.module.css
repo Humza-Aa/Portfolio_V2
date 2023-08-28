@@ -49,6 +49,17 @@
   z-index: -1;
 }
 
+.projectName, .myName, .appName, .degree {
+  color: var(--Text);
+}
+
+.projectName > a, .appName > a {
+  text-decoration: underline;
+  color: var(--Text);
+
+}
+
+
 @media only screen and (max-width: 1500px) {
   .homeSumDiv{
     padding-top: 10rem;

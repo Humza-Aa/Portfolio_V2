@@ -22,7 +22,7 @@
   display: flex;
   padding: 0 0 0 4px;
   font-weight: 590;
-  color: var(--LBI);
+  /* color: var(--LBI); */
 }
 
 .date {

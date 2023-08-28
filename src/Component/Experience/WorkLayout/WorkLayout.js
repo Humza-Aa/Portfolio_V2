@@ -9,7 +9,7 @@ export default function WorkLayout() {
       Role: "Software Developer",
       TimeSpent: "Jan 2023 – Present",
       Description: [
-        `Collaborated with a team of 5 developers through an agile development process to improve responsiveness,
+        `Collaborated with a team of five developers through an agile development process to improve responsiveness,
       accessibility, and UI design, resulting in a 30% improvement in product quality and a 20% increase in client
       satisfaction ratings`,
         `Spearheaded the development of the front-end, by employing a user-centered design approach by conducting 45+

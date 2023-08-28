@@ -38,8 +38,8 @@ export default function MobileNav(props) {
         >
           {props.hLinks.map((link, key) => {
             return (
-              <a onClick={() => setIsOpen(!isOpen)} href={link.path}>
-                <div className={styles.linkDiv} key={key}>
+              <a key={key} onClick={() => setIsOpen(!isOpen)} href={link.path}>
+                <div className={styles.linkDiv}>
                   {link.name}
                 </div>
               </a>

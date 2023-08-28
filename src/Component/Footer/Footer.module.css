@@ -64,3 +64,11 @@
 .externalLinks > a > div > svg:hover {
   fill: var(--LBI);
 }
+
+@media only screen and (max-width: 990px) {
+  .FooterDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

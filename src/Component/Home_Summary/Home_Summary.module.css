@@ -50,6 +50,10 @@
 }
 
 @media only screen and (max-width: 1500px) {
+  .homeSumDiv{
+    padding-top: 10rem;
+  }
+
   .aboutDescription {
     display: flex;
     flex-direction: column;

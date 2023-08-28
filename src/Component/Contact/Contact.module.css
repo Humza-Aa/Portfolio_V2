@@ -90,3 +90,8 @@
   color: var(--LBI);
 }
 
+@media only screen and (max-width: 1040px) {
+  .outro {
+    width: 100%;
+  }
+}

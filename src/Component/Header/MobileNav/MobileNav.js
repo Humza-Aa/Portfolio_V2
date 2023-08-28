@@ -5,7 +5,7 @@ import styles from "./MobileNav.module.css";
 export default function MobileNav(props) {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef(null);
-  const refTwo = useRef(null);
+  // const refTwo = useRef(null);
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
@@ -23,15 +23,15 @@ export default function MobileNav(props) {
 
   return (
     <>
-      <div className={styles.headerDiv}>
+      <div className={styles.headerDiv} ref={ref}>
         <HamburgerMenu
           isOpen={isOpen}
           setIsOpen={setIsOpen}
           className={styles.HamburgerMenu}
-          ref={refTwo}
+          // ref={refTwo}
         />
         <div
-          ref={ref}
+          
           className={`${styles.linksDiv} ${
             isOpen ? styles.open : styles.close
           }`}

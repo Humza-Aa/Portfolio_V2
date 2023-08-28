@@ -1,0 +1,40 @@
+.hamburger_icon {
+  display: none;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: var(--LBI);
+  border-radius: 10px;
+  margin: 3px 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+@media only screen and (max-width: 1040px) {
+  .hamburger_icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+
+  .hamburger_icon:hover > div {
+    background-color: var(--Text);
+  }
+  .open .bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .open .bar:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+}

@@ -1,11 +1,12 @@
 .headerDiv {
   color: #05f3ff;
   padding: 10px 7%;
-  
+
   display: flex;
   justify-content: space-between;
 
-  position: sticky; top: 0;
+  position: sticky;
+  top: 0;
   background-color: #22283153;
   backdrop-filter: blur(10px);
 
@@ -43,7 +44,6 @@
   font-weight: 400;
   color: var(--LBI);
   text-decoration: none;
-
 }
 
 .linkDiv > a:hover {
@@ -56,12 +56,12 @@
 }
 
 .linkDiv > a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0;
-  height: 5px; 
+  height: 5px;
   background-color: var(--Text);
   transition: width 0.3s ease;
   border-radius: 10px;
@@ -69,4 +69,14 @@
 
 .linkDiv > a:hover::after {
   width: 100%; /* Full width on hover */
+}
+
+.HamburgerMenu {
+  display: none;
+}
+
+@media only screen and (max-width: 1040px) {
+  .linksDiv {
+    display: none;
+  }
 }

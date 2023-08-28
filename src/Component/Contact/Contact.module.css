@@ -2,9 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4% 10% 0 10%;
+  padding: 2% 10% 7% 10%;
   gap: 1.2rem;
-  height: 100vh;
 }
 
 .miniTitle {
@@ -35,8 +34,8 @@
 .githubLink > svg,
 .linkedInLink > svg,
 .emailLink {
-  color: var(--LBI);
-  fill: var(--LBI);
+  color: var(--Text);
+  fill: var(--Text);
   width: 25px;
   height: 25px;
 }
@@ -54,3 +53,40 @@
   border-radius: 10px;
   background-color: var(--Secondary_background);
 }
+
+.externalLinks > a > div:hover {
+  color: var(--LBI);
+}
+
+.externalLinks > a > div > svg:hover {
+  fill: var(--LBI);
+}
+
+.resumeLink {
+  text-decoration: none;
+  color: var(--Text);
+}
+
+.resumeBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  background-color: var(--Secondary_background);
+}
+
+.downloadBtn {
+  width: 25px;
+}
+
+.resumeBtn:hover {
+  cursor: pointer;
+  background-color: #61656c7e;
+  color: var(--LBI);
+}
+

@@ -60,3 +60,10 @@
 .skillImg {
   width: 30px;
 }
+
+@media only screen and (max-width: 1500px) {
+  .skillSet {
+    padding-top: 15%;
+    padding-bottom: 20%;
+  }
+}

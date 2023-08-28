@@ -1,6 +1,6 @@
 .homeDiv {
   display: flex;
-  padding: 0 10%;
+  padding: 2% 10% 0 10%;
   gap: 5rem;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .homeLeftSide > div:first-child {
-  font-size: 1.6rem;
+  font-size: 85%;
 }
 
 .homeLeftSide > div:nth-child(2) {
@@ -32,14 +32,51 @@
 
 .homeRightSide {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-self: center;
- 
+  width: 40%;
   /* width: 100%; */
 }
 
 .animationDiv {
+  display: flex;
+  justify-content: center;
   width: 30rem;
   height: 30rem;
   z-index: -1;
 }
+
+@media only screen and (max-width: 1040px) {
+  .homeDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+  
+  .homeLeftSide { 
+    padding-bottom: 4rem;
+    padding-top: 3rem;
+  }
+
+  .homeLeftSide > div:nth-child(2) {
+    text-align: center;
+  }
+ 
+  .homeRightSide {
+    width: 100%;
+  }
+
+  .animationDiv {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15rem;
+  }
+  
+  /* .animationDiv > * {
+    width: 100rem;
+    height: 100rem;
+    z-index: -1;
+  } */
+} 

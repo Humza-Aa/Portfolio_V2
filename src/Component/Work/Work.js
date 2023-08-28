@@ -7,7 +7,7 @@ import OtherProjects from "./OtherProjects/OtherProjects";
 export default function Work() {
   return (
     <>
-      <div className={styles.projectsDiv}>
+      <div className={styles.projectsDiv} id="work">
         <div className={styles.projectsTitle}>
           <div>WORK</div>
           <div>A Glimpse into My Projects</div>

@@ -1,0 +1,66 @@
+.FooterDiv {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 15px;
+  background-color: #393e4698;
+}
+
+.FooterDiv > div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.FooterDiv:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-right: 20px;
+}
+
+.name {
+  display: flex;
+  padding: 0 0 0 4px;
+  font-weight: 590;
+  color: var(--LBI);
+}
+
+.date {
+  /* color: var(--LBI); */
+}
+
+.externalLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.githubLink > svg,
+.linkedInLink > svg,
+.emailLink {
+  color: var(--Text);
+  fill: var(--Text);
+  width: 25px;
+  height: 25px;
+}
+
+.emailLink > * {
+  width: 25px;
+  height: 25px;
+}
+
+.externalLinks > a > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 10px;
+  border-radius: 10px; */
+  /* background-color: var(--Secondary_background); */
+}
+
+.externalLinks > a > div:hover {
+  color: var(--LBI);
+}
+
+.externalLinks > a > div > svg:hover {
+  fill: var(--LBI);
+}

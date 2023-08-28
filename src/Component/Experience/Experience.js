@@ -4,7 +4,7 @@ import WorkLayout from "./WorkLayout/WorkLayout";
 export default function Experience() {
   return(
     <>
-      <div className={styles.ExpDiv}>
+      <div className={styles.ExpDiv} id="exp">
         <div className={styles.expTitle}>
           <div>EXPERIENCE</div>
           <div>My Professional Journey</div>

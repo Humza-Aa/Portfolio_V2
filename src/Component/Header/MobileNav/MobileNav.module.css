@@ -1,0 +1,49 @@
+.headerDiv {
+  display: none;
+}
+
+@media only screen and (max-width: 1040px) {
+  .headerDiv {
+    display: flex;
+  }
+  .linksDiv {
+    position: absolute;
+    top: 4.2rem;
+    right: 0;
+    width: 100%;
+    /* padding: 20px; */
+    font-size: 20px;
+    text-align: center;
+    background-color: #454a51a2;
+    backdrop-filter: blur(10px);
+    /* -webkit-backdrop-filter: blur(10px); */
+    z-index: 100;
+  }
+
+  .linksDiv > a:hover {
+    color: var(--Text);
+  }
+
+  .linkDiv {
+    padding: 10px;
+  }
+
+  .linkDiv:hover {
+    cursor: pointer;
+    background-color: #454a5183;
+  }
+
+  .linksDiv > a {
+    text-decoration: none;
+    color: var(--LBI);
+  }
+
+  .close {
+    display: none;
+  }
+
+  .open {
+    display: flex;
+    flex-direction: column;
+  }
+}

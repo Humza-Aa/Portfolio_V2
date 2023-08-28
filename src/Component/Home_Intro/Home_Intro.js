@@ -5,7 +5,7 @@ import CoderAnimation from "./Animations/CoderAnimation";
 export default function Home_Intro() {
   return (
     <>
-      <div className={styles.homeDiv}>
+      <div className={styles.homeDiv} id="home">
         <div className={styles.homeLeftSide}>
           <div>Hello, my name is</div>
           <div> Humza Aamir </div>

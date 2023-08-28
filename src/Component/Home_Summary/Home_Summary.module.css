@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
-  padding: 4% 10% 0 10%;
+  padding: 5% 10% 0 10%;
   gap: 1.2rem;
 }
 
@@ -24,20 +24,44 @@
 
 .aboutDescription {
   display: flex;
-  gap: 7rem;
+  gap: 4rem;
   color: var(--LBI);
 }
 
 .aboutDescription > div:first-child {
   padding: 3rem 0 0 0;
+  width: 70%;
+}
+
+.profilePic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 50%; */
 }
 
 .profilePic > img {
-  max-width: 30rem;
+  display: flex;
+  width: 70%;
   border-radius: 10px;
-  /* filter: drop-shadow(0 0 8px 8px #222831);
-  -webkit-filter: drop-shadow(0 0 8px 8px #222831); */
   -webkit-filter: drop-shadow(5px 5px 5px #666666);
   filter: drop-shadow(5px 5px 5px #666666);
   z-index: -1;
+}
+
+@media only screen and (max-width: 1500px) {
+  .aboutDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutDescription > div:first-child {
+    width: 100%;
+  }
+}
+  @media only screen and (max-width: 1040px) {
+  .aboutDescription {
+    flex-direction: column;
+  }
 }

@@ -1,34 +1,35 @@
 import styles from './Header.module.css'
+import MobileNav from './MobileNav/MobileNav';
 
 export default function Header() {
   const hLinks = [
     {
       name: 'Home',
       svg: 'home',
-      path: ''
+      path: '#home'
     },
     {
       name: 'About',
       svg: 'about',
-      path: ''
+      path: '#summary'
     },
     {
       name: 'Experience',
       svg: 'exp',
-      path: ''
+      path: '#exp'
     },
     {
       name: 'Work',
       svg: 'home',
-      path: ''
+      path: '#work'
     },
     {
       name: 'Contact',
       svg: 'home',
-      path: ''
+      path: '#contact'
     },
   ]
-  
+
   return (
     <>
       <div className={styles.headerDiv}>
@@ -38,12 +39,13 @@ export default function Header() {
             hLinks.map((link, key) => {
               return(
                 <div className={styles.linkDiv} key={key}>
-                  <a href="/">{link.name}</a>
+                  <a href={link.path}>{link.name}</a>
                 </div>
               )
             })
           }
         </div>
+        <MobileNav hLinks={hLinks}/>
       </div>
     </>
   );

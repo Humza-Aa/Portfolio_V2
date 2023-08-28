@@ -1,7 +1,7 @@
 .projectsDiv {
   display: flex;
   flex-direction: column;
-  padding: 4% 10% 10% 10%;
+  padding: 5% 10% 10% 10%;
   gap: 4rem;
 }
 
@@ -26,6 +26,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 4rem;  
+  /* padding: 4% 0 0 0; */
 }
 
 .projectDiv {
@@ -42,7 +43,7 @@
   display: flex;
   align-items: center;
   /* height: fit-content; */
-  width: 50%;
+  /* width: 60%; */
 }
 
 .projectImg > img {
@@ -53,8 +54,8 @@
 
 .projectInfo {
   display: flex;
-  flex-direction: column;
-  width: 50%;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
 }
 
 .projectTitle {
@@ -79,11 +80,13 @@
 .toolsImg{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 15px;
   padding: 10px;
 }
 .toolsImg > img {
-  width: 35px;
+  width: 10%;
+  max-width: 35px;
 }
 
 .LinksIcons {
@@ -126,4 +129,26 @@
 .githubLink:hover, .liveLinkDiv:hover {
   cursor: pointer;
   background-color: rgb(136, 134, 134);
+}
+
+@media only screen and (max-width: 1500px) {
+  .projectDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .projectDiv > div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .projectsTitle {
+    padding: 0;
+    text-align: center;
+  }
+  
+  .projectInfoInner {
+    padding: 0;
+  }
 }

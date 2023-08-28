@@ -4,7 +4,7 @@ import profilePic from "./Images/profilepic.JPG"
 export default function HomeSummary() {
   return (
     <>
-      <div className={styles.homeSumDiv}>
+      <div className={styles.homeSumDiv} id="summary">
         <div className={styles.aboutTitle}>
           <div>ABOUT</div>
           <div>Who Am I?</div>

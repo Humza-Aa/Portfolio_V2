@@ -8,25 +8,17 @@
 
 .OtherPrjtMain {
   display: flex;
-  /* flex-direction: row; */
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.projectName {
-  
 }
 
 .OtherPrjtDiv {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /* width: 30%; */
-  /* min-width: 70%; */
   max-width: 450px;
   padding: 15px;
-  /* box-shadow: 0 5px 5px #666666; */
   border-radius: 10px;
   background-color: #3e495a8d;
   color: var(--LBI);
@@ -112,12 +104,4 @@
 .moreProjBtn:hover {
   cursor: pointer;
   background-color: rgb(136, 134, 134);
-}
-
-@media only screen and (max-width: 1200px) {
-  /* .OtherPrjtMain {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
 }

@@ -10,7 +10,6 @@
   flex-direction: column;
   padding: 0.5rem 1.2rem;
   min-width: fit-content;
-  /* max-width: 1.6rem; */
   font-weight: 600;
 }
 
@@ -55,7 +54,6 @@
   flex-direction: column;
   gap: 1.1rem;
   color: var(--LBI);
-  /* list-style-type: "🔔";  */
 }
 
 .deslist > li {
@@ -91,8 +89,6 @@ ul li::before {
 }
 
 @media only screen and (max-width: 850px) {
-  
-
   ul li::before {
     height: 25px;
     width: 25px;

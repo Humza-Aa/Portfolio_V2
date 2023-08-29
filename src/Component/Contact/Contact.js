@@ -3,19 +3,14 @@ import styles from "./Contact.module.css";
 import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import resume from "./Resume/Humza_Aamir_Resume.pdf";
 
-export default function Contact() {
+export default function Contact(props) {
+  const contactOutro = props.contactOutro;
   return (
     <>
       <div className={styles.contactDiv} id="contact">
         <div className={styles.miniTitle}>CONTACT</div>
         <div className={styles.contactTitle}>Feel Free To Reach Out</div>
-        <div className={styles.outro}>
-          I'm always open to exciting new opportunities and collaborations in
-          the world of software development. Whether it's discussing potential
-          projects, sharing insights, or simply saying hello, I'm eager to
-          connect and explore how we can work together to create innovative
-          solutions. Let's connect and build something remarkable!
-        </div>
+        <div className={styles.outro}>{contactOutro}</div>
         <div className={styles.externalLinks}>
           <a
             target="_blank"

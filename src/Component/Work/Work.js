@@ -1,10 +1,10 @@
 import styles from "./Work.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-import { projects } from "./Data/ProjectData";
 import OtherProjects from "./OtherProjects/OtherProjects";
 
-export default function Work() {
+export default function Work(props) {
+  const projects = props.projects.projects;
   return (
     <>
       <div className={styles.projectsDiv} id="work">
@@ -78,7 +78,7 @@ export default function Work() {
             );
           })}
         </div>
-        <OtherProjects />
+        <OtherProjects smallProjects={props.projects.smallProjects}/>
       </div>
     </>
   );

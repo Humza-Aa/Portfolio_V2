@@ -2,7 +2,7 @@ import ReactTyped from "react-typed";
 import styles from "./home_Intro.module.css";
 import CoderAnimation from "./Animations/CoderAnimation";
 
-export default function Home_Intro() {
+export default function Home_Intro(props) {
   return (
     <>
       <div className={styles.homeDiv} id="home">
@@ -11,19 +11,10 @@ export default function Home_Intro() {
           <div> Humza Aamir </div>
           <div>
             <ReactTyped
-              strings={[
-                "Developer",
-                "Cloud Engineer",
-                "Software Developer",
-                "AI Enthusiast",
-                "Full Stack Developer",
-                "UX/UI Designer",
-                "Web Developer",
-              ]}
+              strings={props.typer}
               typeSpeed={100}
               loop
               backSpeed={20}
-              // cursorChar=")"
               showCursor={true}
             />
           </div>

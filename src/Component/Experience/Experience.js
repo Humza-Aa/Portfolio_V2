@@ -1,7 +1,7 @@
 import styles from "./Experience.module.css";
 import WorkLayout from "./WorkLayout/WorkLayout";
 
-export default function Experience() {
+export default function Experience(props) {
   return(
     <>
       <div className={styles.ExpDiv} id="exp">
@@ -9,7 +9,7 @@ export default function Experience() {
           <div>EXPERIENCE</div>
           <div>My Professional Journey</div>
           <div className={styles.workListingDiv}>
-            <WorkLayout />
+            <WorkLayout workData={props.workData}/>
           </div>
         </div>
       </div>

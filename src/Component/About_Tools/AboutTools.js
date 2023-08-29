@@ -1,9 +1,8 @@
 import styles from "./AboutTools.module.css";
-import ToolsData from "./Tools_data/ToolsData";
-// import Astro from "./Tools_data/Images/Astro.png"
 const images = require.context("./Tools_data/Images", true);
 
-export default function AboutTools() {
+export default function AboutTools(props) {
+  const ToolsData = props.Tools;
   return (
     <>
       <div className={styles.skillSet}>

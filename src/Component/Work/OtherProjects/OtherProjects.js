@@ -1,9 +1,9 @@
 import styles from "./OtherProjects.module.css";
-import { smallProjects } from "../Data/ProjectData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
-export default function OtherProjects() {
+export default function OtherProjects(props) {
+  const smallProjects = props.smallProjects;
   return (
     <>
       <div className={styles.title}>Honorable Mentions</div>

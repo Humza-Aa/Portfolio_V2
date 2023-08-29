@@ -2,7 +2,8 @@
   <img src="./public/ha-logo.png" alt="Logo" width="200" />
 </div>
 
-# My Portfolio V2
+<div align="center"> <h1>My Portfolio V2</h1></div>
+
 
 Welcome to my new portfolio repository! This repository houses the code for my personal portfolio website, where I showcase my projects, skills, and experiences.
 

@@ -235,33 +235,42 @@ const Data = {
   WorkLayout: {
     workData: [
       {
-        WorkPlace: "Project Human City",
+        WorkPlace: "Cascadia Carbon",
         Role: "Software Developer",
-        TimeSpent: "Jan 2023 – Present",
+        TimeSpent: "Jan 2024 – Present",
         Description: [
-          `Collaborated with a team of five developers through an agile development process to improve responsiveness,
-        accessibility, and UI design, resulting in a 30% improvement in product quality and a 20% increase in client
-        satisfaction ratings`,
-          `Spearheaded the development of the front-end, by employing a user-centered design approach by conducting 45+
-        user tests to determine the best UI/UX approach, resulting in improved user experience and increased engagement`,
-          `Revamped existing wireframes, utilizing a responsive design approach to improve the platform’s usability by 10%
-        and accessibility by 40% across a variety of devices, resulting in a more intuitive and streamlined user experience.`,
+          'Just began my journey but I already have redesigned and developed a new responsive frontend for our webapp'
         ],
         id: 1,
+      },
+      {
+        WorkPlace: "Project Human City",
+        Role: "Software Developer",
+        TimeSpent: "Jan 2023 – 2024",
+        Description: [
+          `Collaborated with cross-functional teams in enhancing product responsiveness, accessibility, and UI design through
+          rigorous user tests and A/B testing, resulting in a 20% boost in user satisfaction`,
+          `Developed React functional components from scratch, seamlessly integrating them into the existing legacy code base to
+          optimize the user experience and reduce UI bugs`,
+          `Refactored a secure Node.js with Express.js back-end server, integrating user authentication and access control for
+          protected pages`,
+          "Developed REST APIs for efficient user data communication between the front-end and back-end, while integrating MongoDB to ensure secure storage of sensitive information",
+        ],
+        id: 2,
       },
       {
         WorkPlace: "Excel Lassonde",
         Role: "Software Developer",
         TimeSpent: "Sep 2022 – Dec 2022",
         Description: [
-          `Redesigned wireframes and mock-ups using design software such as Figma to showcase design concepts and user
-          interfaces for various web applications, leading to 70% higher user adoption rates.`,
-          `Designed, developed, and deployed customized software applications by collaborating with cross-functional teams to
-          analyze user requirements, resulting in enhanced user test cases and greater inclusivity for all users.`,
-          `Implemented various performance optimization techniques, including image compression, lazy loading, and caching,
-          resulting in an 80% reduction in page load times and a significant increase of 5,000 monthly website visitors.`,
+          `Revamped UI designs and mock-ups using Figma, resulting in a 70% increase in user adoption rates`,
+          `Addressed performance issues, implementing optimization techniques, including image compression, lazy loading, and
+          caching for a 10% faster page load`,
+          `Successfully integrated York University’s Duo authentication system, strengthening web security and ensuring secure
+          access, resulting in a significant 60% reduction in false tutor appointments`,
+          'Transformed the back-end with Node.js and Express to flawlessly manage front-end requests from 500+ students, averting crashes and ensuring uninterrupted service',
         ],
-        id: 2,
+        id: 3,
       },
     ],
   },
@@ -357,7 +366,8 @@ const Data = {
           Astro,
         ],
         links: {
-          github: "https://github.com/mustaffaimran/FactCheckingCapstoneProject",
+          github:
+            "https://github.com/mustaffaimran/FactCheckingCapstoneProject",
           Live: "https://mustaffaimran.github.io/",
         },
       },
@@ -440,7 +450,9 @@ const Data = {
             Introducing the{" "}
             <span className={projectStyles.highlight}>Playstore Scraper</span>
             —an innovative app that harnesses the power of data to provide{" "}
-            <span className={projectStyles.highlight}>valuable insights</span>{" "}
+            <span className={projectStyles.highlight}>
+              valuable insights
+            </span>{" "}
             into app performance. By scraping app reviews and employing{" "}
             <span className={projectStyles.highlight}>
               natural language processing

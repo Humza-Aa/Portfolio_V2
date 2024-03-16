@@ -111,7 +111,7 @@ const Data = {
       {
         name: "TailWindCss",
         image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
       },
       {
         name: "JavaScript",
@@ -239,7 +239,10 @@ const Data = {
         Role: "Software Developer",
         TimeSpent: "Jan 2024 – Present",
         Description: [
-          'Just began my journey but I already have redesigned and developed a new responsive frontend for our webapp'
+          "Revamped React to Next.js web app for intuitive navigation and 20% faster loading",
+          "Deployed web app to Firebase for seamless scalability and management",
+          "Enhanced user experience with dynamic features and animations, leading to a 15% increase in user engagement",
+          "Streamlined onboarding process, enabling new developers to integrate and contribute 25% faster",
         ],
         id: 1,
       },
@@ -268,7 +271,7 @@ const Data = {
           caching for a 10% faster page load`,
           `Successfully integrated York University’s Duo authentication system, strengthening web security and ensuring secure
           access, resulting in a significant 60% reduction in false tutor appointments`,
-          'Transformed the back-end with Node.js and Express to flawlessly manage front-end requests from 500+ students, averting crashes and ensuring uninterrupted service',
+          "Transformed the back-end with Node.js and Express to flawlessly manage front-end requests from 500+ students, averting crashes and ensuring uninterrupted service",
         ],
         id: 3,
       },

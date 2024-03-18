@@ -1,15 +1,43 @@
-import styles from "./chatBot.module.css";
+import React, { useState, useRef } from "react";
+import ChatInterface from "./Chat_Interface/chatInterface";
+import styles from "./chatBot.module.css"
 
-export default function ChatBot() {
-  const handleClick = () => {
-    // Function to handle button click
-    console.log("Button clicked!");
-    // You can add logic here to trigger your chatbot
+const App = () => {
+  const [showChat, setShowChat] = useState(false);
+  const chatButtonRef = useRef(null);
+
+  const handleButtonClick = () => {
+    setShowChat(true);
+  };
+
+  const handleCloseChat = () => {
+    setShowChat(false);
+  };
+
+  const getButtonPosition = () => {
+    const buttonRect = chatButtonRef.current.getBoundingClientRect();
+    return {
+      top: buttonRect.top,
+      left: buttonRect.left,
+    };
   };
 
   return (
     <div>
-      <button className={styles.btn} onClick={handleClick} text="Start Chat"> Chat Now </button>
+      <button
+        className={styles.btn}
+        ref={chatButtonRef}
+        onClick={handleButtonClick}
+
+      >chat now</button>
+      {showChat && (
+        <ChatInterface
+          onClose={handleCloseChat}
+          buttonPosition={getButtonPosition()}
+        />
+      )}
     </div>
   );
-}
+};
+
+export default App;

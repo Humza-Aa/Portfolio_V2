@@ -20,7 +20,7 @@ const App = () => {
       const formData = new FormData();
       formData.append("message", message);
 
-      const response = await fetch("http://localhost:5000/chat", {
+      const response = await fetch("https://chat-app-zl6s.onrender.com/chat", {
         method: "POST",
         body: formData,
       });

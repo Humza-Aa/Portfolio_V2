@@ -47,13 +47,13 @@ const ChatInterface = ({ toggleChat, sendMessageToBackend }) => {
         {isHeaderExpanded && (
           <div className={styles.botInfo}>
             <p>
-              This is My Portfolio Pal, a chatbot designed to assist you with
+              This is My Portfolio Pal, a AI chatbot designed to assist you with
               information about my portfolio.
             </p>
-            <p>Feel free to ask any questions or request information.</p>
+            <p className={styles.mainNote2}>Feel free to ask any questions.</p>
           </div>
         )}
-        <p className={styles.sideNote}>**My Pal may need one min to wake up**</p>
+        <p className={styles.sideNote}>**My Pal may need one minute to wake up**</p>
         <p className={styles.sideNote2}>**Refresh if needed**</p>
       </div>
 
@@ -75,7 +75,7 @@ const ChatInterface = ({ toggleChat, sendMessageToBackend }) => {
           type="text"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
-          placeholder="Type a message..."
+          placeholder="Talk to my Pal..."
           className={styles.input}
         />
         <button onClick={handleMessageSend} className={styles.sendButton}>

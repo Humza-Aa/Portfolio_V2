@@ -7,12 +7,8 @@ const App = () => {
   const [showChat, setShowChat] = useState(false);
   const chatContainerRef = useRef(null);
 
-  const handleButtonClick = () => {
-    setShowChat(true);
-  };
-
-  const handleCloseChat = () => {
-    setShowChat(false);
+  const toggleChat = () => {
+    setShowChat(!showChat);
   };
 
   const sendMessageToBackend = async (message) => {
@@ -39,16 +35,16 @@ const App = () => {
 
   useEffect(() => {
     sendMessageToBackend("hello");
-  }, [])
+  }, []);
 
   return (
     <div ref={chatContainerRef} className={styles.container}>
-      <button className={styles.btn} onClick={handleButtonClick}>
-        chat now
+      <button className={styles.btn} onClick={toggleChat}>
+        {showChat ? "Close Chat" : "Open Chat"}
       </button>
       {showChat && (
         <ChatInterface
-          onClose={handleCloseChat}
+          toggleChat={toggleChat}
           sendMessageToBackend={sendMessageToBackend}
         />
       )}

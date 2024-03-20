@@ -1,37 +1,58 @@
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./chatInterface.module.css";
 
-const ChatInterface = ({ onClose, sendMessageToBackend }) => {
+const ChatInterface = ({ toggleChat, sendMessageToBackend }) => {
   const [messages, setMessages] = useState([]);
   const [inputValue, setInputValue] = useState("");
+  const [isHeaderExpanded, setIsHeaderExpanded] = useState(false);
   const chatWindowRef = useRef(null);
 
-  // Scroll to bottom of chat window on new message
   useEffect(() => {
     if (chatWindowRef.current) {
       chatWindowRef.current.scrollTop = chatWindowRef.current.scrollHeight;
     }
   }, [messages]);
 
+  const toggleHeaderExpansion = () => {
+    setIsHeaderExpanded(!isHeaderExpanded);
+  };
+
   const handleMessageSend = async () => {
     if (inputValue.trim() !== "") {
       const userMessage = { text: inputValue, sender: "You" };
       setMessages((prevMessages) => [...prevMessages, userMessage]);
       setInputValue("");
-      const res = await sendMessageToBackend(inputValue);
-      console.log(res);
-      const botMessage = { text: res, sender: "Bot" };
+
+      const botMessage = { text: "Typing...", sender: "Pal" };
       setMessages((prevMessages) => [...prevMessages, botMessage]);
+
+      const res = await sendMessageToBackend(inputValue);
+      const botResponse = { text: res, sender: "Pal" };
+      setMessages((prevMessages) => [
+        ...prevMessages.filter((message) => message.text !== "Typing..."),
+        botResponse,
+      ]);
     }
   };
 
   return (
     <div className={styles.chatInterface}>
-      <div className={styles.aiProfile}>
+      <div
+        className={`${styles.aiProfile} ${
+          isHeaderExpanded ? styles.expanded : ""
+        }`}
+        onClick={toggleHeaderExpansion}
+      >
         <header className={styles.chatTitle}>My Portfolio Pal</header>
-        <button className={styles.closeButton} onClick={onClose}>
-          X
-        </button>
+        {isHeaderExpanded && (
+          <div className={styles.botInfo}>
+            <p>
+              This is My Portfolio Pal, a chatbot designed to assist you with
+              information about my portfolio.
+            </p>
+            <p>Feel free to ask any questions or request information.</p>
+          </div>
+        )}
       </div>
 
       <div className={styles.chatWindow} ref={chatWindowRef}>

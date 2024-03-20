@@ -1,5 +1,5 @@
 // App.js
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import ChatInterface from "./Chat_Interface/chatInterface";
 import styles from "./chatBot.module.css";
 
@@ -36,6 +36,10 @@ const App = () => {
       console.error("Error:", error);
     }
   };
+
+  useEffect(() => {
+    sendMessageToBackend("hello");
+  }, [])
 
   return (
     <div ref={chatContainerRef} className={styles.container}>

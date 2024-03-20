@@ -53,6 +53,9 @@
   margin-bottom: 10px;
   /* max-width: 70%; Limit message width */
 }
+.messageText {
+  color: white;
+}
 
 .message.you {
   text-align: right;
@@ -94,6 +97,7 @@
   border: 1px solid #ccc; 
   border-radius: 4px; 
   outline: none;
+  color: white;
 }
 
 .inputArea input:focus {

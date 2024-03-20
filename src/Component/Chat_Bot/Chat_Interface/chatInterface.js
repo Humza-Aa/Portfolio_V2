@@ -28,7 +28,7 @@ const ChatInterface = ({ onClose, sendMessageToBackend }) => {
   return (
     <div className={styles.chatInterface}>
       <div className={styles.aiProfile}>
-        <header className={styles.chatTitle}>AI Assistant</header>
+        <header className={styles.chatTitle}>My Portfolio Pal</header>
         <button className={styles.closeButton} onClick={onClose}>
           X
         </button>
@@ -43,7 +43,7 @@ const ChatInterface = ({ onClose, sendMessageToBackend }) => {
             }`}
           >
             <span className={styles.sender}>{message.sender}:</span>{" "}
-            {message.text}
+            <span className={styles.messageText}>{message.text}</span>
           </div>
         ))}
       </div>

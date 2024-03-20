@@ -19,6 +19,7 @@
   padding: 10px;
   justify-content: center;
   z-index: 1;
+  border-radius: 6px;
 }
 .aiProfile:hover {
   background-color: #4c535d;
@@ -39,6 +40,19 @@
 .botInfo {
   padding: 10px;
   color: white;
+}
+
+.sideNote {
+  margin-bottom: 0;
+}
+
+.sideNote2 {
+  margin-top: 0;
+}
+
+.sideNote, .sideNote2 {
+  font-size: 12px;
+  text-align: center;
 }
 
 .chatWindow {
@@ -149,4 +163,13 @@
 
 .closeButton:hover {
   color: #555;
+}
+
+@media (max-width: 600px) {
+  .chatInterface {
+    position: fixed;
+    bottom: 80px;
+    right: 9px;
+    max-width: 90%;
+  }
 }

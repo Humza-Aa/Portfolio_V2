@@ -53,6 +53,8 @@ const ChatInterface = ({ toggleChat, sendMessageToBackend }) => {
             <p>Feel free to ask any questions or request information.</p>
           </div>
         )}
+        <p className={styles.sideNote}>**My Pal may need one min to wake up**</p>
+        <p className={styles.sideNote2}>**Refresh if needed**</p>
       </div>
 
       <div className={styles.chatWindow} ref={chatWindowRef}>

@@ -40,7 +40,7 @@ const App = () => {
   return (
     <div ref={chatContainerRef} className={styles.container}>
       <button className={styles.btn} onClick={toggleChat}>
-        {showChat ? "Close Chat" : "Open Chat"}
+        {showChat ? "Close Chat" : "Talk to My Pal"}
       </button>
       {showChat && (
         <ChatInterface

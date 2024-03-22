@@ -35,6 +35,13 @@ const ChatInterface = ({ toggleChat, sendMessageToBackend }) => {
     }
   };
 
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      handleMessageSend();
+    }
+  };
+
   return (
     <div className={styles.chatInterface}>
       <div
@@ -75,6 +82,7 @@ const ChatInterface = ({ toggleChat, sendMessageToBackend }) => {
           type="text"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
+          onKeyDown={handleKeyPress} 
           placeholder="Talk to my Pal..."
           className={styles.input}
         />

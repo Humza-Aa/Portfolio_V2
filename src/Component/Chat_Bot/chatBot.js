@@ -34,7 +34,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    sendMessageToBackend("hello");
+    sendMessageToBackend("Site Opened");
   }, []);
 
   return (

@@ -52,35 +52,44 @@ const Data = {
       <>
         Hey there, I'm <span className={homeSummarystyles.myName}>Humza</span>
         —an avid software developer fueled by a passion for crafting immersive
-        digital experiences. It all began three years ago when I embarked on a
-        journey with The Odin Project, igniting a love for coding that has only
-        grown stronger.
-      </>,
-      <>
-        Today, I'm part of the dynamic team at{" "}
+        digital experiences. My coding adventure kicked off three years ago when
+        I discovered{" "}
         <span className={homeSummarystyles.projectName}>
           <a
-            href="https://projecthumancity.com/"
+            href="https://www.theodinproject.com/"
             target="_blank"
             rel="noreferrer"
           >
-            Project Human City
+            The Odin Project
           </a>
         </span>
-        , where I fuse technology with purpose. Whether it's bringing
+        , and ever since, my love for programming has only grown stronger.
+      </>,
+      <>
+        Currently, I'm part of the dynamic team at{" "}
+        <span className={homeSummarystyles.projectName}>
+          <a
+            href="https://cascadiacarbon.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Cascadia Carbon
+          </a>
+        </span>
+        , where I merge technology with purpose. Whether it's bringing
         single-page wonders to life or orchestrating intricate full stack
         marvels, I thrive on translating ideas into digital reality.
       </>,
       <>
-        Recently armed with a degree in{" "}
+        Recently armed with a Bachelor's in{" "}
         <span className={homeSummarystyles.degree}>Computer Engineering</span>,
-        I'm on a relentless pursuit of progress. Venturing into the realms of
-        cloud computing and AI, I revel in the synergy of innovation and
-        mastery.
+        I'm on a mission for growth that knows no bounds. Exploring the
+        fascinating worlds of cloud computing and AI, I'm all about the perfect
+        mix of creativity and skill.
       </>,
       <>
-        In addition to my journey, I've also embarked on a mission to drive
-        change. I proudly introduced{" "}
+        In addition to my journey, I've also taken up a mission to make a
+        difference. Allow me to introduce you to{" "}
         <span className={homeSummarystyles.appName}>
           <a
             href="https://crimevue.vercel.app/"
@@ -90,9 +99,20 @@ const Data = {
             'CrimeVue'
           </a>
         </span>
-        —a transformative solution that meticulously gathers and visualizes
-        crime data, thereby contributing to safer communities. Join me on this
-        impactful expedition as we reshape the landscape together.
+        —a project close to my heart, meticulously gathering and visualizing
+        crime data to help build safer communities. And meet{" "}
+        <span className={homeSummarystyles.appName}>
+          <a
+            href="https://github.com/Humza-Aa/AI_Chat_App"
+            target="_blank"
+            rel="noreferrer"
+          >
+            'My Portfolio Pal'
+          </a>
+        </span>
+        —an AI chatbot trained on my experiences, here to answer any questions
+        you might have about me. Let's embark on this meaningful journey
+        together, shaping the world for the better.
       </>,
     ],
   },
@@ -239,10 +259,10 @@ const Data = {
         Role: "Software Developer",
         TimeSpent: "Jan 2024 – Present",
         Description: [
-          "Revamped React to Next.js web app for intuitive navigation and 20% faster loading",
-          "Deployed web app to Firebase for seamless scalability and management",
-          "Enhanced user experience with dynamic features and animations, leading to a 15% increase in user engagement",
-          "Streamlined onboarding process, enabling new developers to integrate and contribute 25% faster",
+          "Revamped React to Next.js web app, for intuitive navigation and 20% faster loading.",
+          "Deployed web app to Firebase for seamless scalability and management.",
+          "Enhanced user experience with dynamic features and animations, leading to a 15% increase in user engagement.",
+          "Streamlined onboarding process, enabling new developers to integrate and contribute 25% faster.",
         ],
         id: 1,
       },

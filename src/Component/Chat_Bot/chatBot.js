@@ -33,9 +33,9 @@ const App = () => {
     }
   };
 
-  useEffect(() => {
-    sendMessageToBackend("Site Opened");
-  }, []);
+  // useEffect(() => {
+  //   sendMessageToBackend("Site Opened");
+  // }, []);
 
   return (
     <div ref={chatContainerRef} className={styles.container}>

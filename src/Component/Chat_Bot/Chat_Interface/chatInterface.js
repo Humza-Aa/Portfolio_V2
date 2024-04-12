@@ -26,7 +26,7 @@ const ChatInterface = ({ toggleChat, sendMessageToBackend }) => {
       const botMessage = { text: "Typing...", sender: "Pal" };
       setMessages((prevMessages) => [...prevMessages, botMessage]);
 
-      const res = await sendMessageToBackend(inputValue);
+      const res = await sendMessageToBackend(inputValue, 'chat');
       const botResponse = { text: res, sender: "Pal" };
       setMessages((prevMessages) => [
         ...prevMessages.filter((message) => message.text !== "Typing..."),

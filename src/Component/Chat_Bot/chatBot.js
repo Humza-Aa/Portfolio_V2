@@ -11,12 +11,12 @@ const App = () => {
     setShowChat(!showChat);
   };
 
-  const sendMessageToBackend = async (message) => {
+  const sendMessageToBackend = async (message, API) => {
     try {
       const formData = new FormData();
       formData.append("message", message);
 
-      const response = await fetch("https://chat-app-zl6s.onrender.com/chat", {
+      const response = await fetch(`https://chat-app-zl6s.onrender.com/${API}`, {
         method: "POST",
         body: formData,
       });
@@ -33,9 +33,9 @@ const App = () => {
     }
   };
 
-  // useEffect(() => {
-  //   sendMessageToBackend("Site Opened");
-  // }, []);
+  useEffect(() => {
+    sendMessageToBackend("Site Opened", 'loc');
+  }, []);
 
   return (
     <div ref={chatContainerRef} className={styles.container}>

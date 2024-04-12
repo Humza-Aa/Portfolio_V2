@@ -16,7 +16,7 @@ To get this project up and running on your local machine, follow these steps:
 
 1. Clone this repository using the following command:
    ```bash
-   git clone [repository_url]
+   git clone https://github.com/Humza-Aa/Portfolio_V2
    ```
 
 2. Install the project's dependencies using the following command. The --legacy-peer-deps flag is used to handle compatibility issues between dependencies:

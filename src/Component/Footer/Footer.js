@@ -11,7 +11,7 @@ export default function Footer() {
           Designed and Developed by{" "} <span className={styles.name}> Humza Aamir</span>
         </div>
         <div>
-          Copyright @ <span className={styles.date}>2023</span>
+          Copyright @ <span className={styles.date}>2024</span>
         </div>
         <div>
           <div className={styles.externalLinks}>

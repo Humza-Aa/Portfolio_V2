@@ -259,10 +259,10 @@ const Data = {
         Role: "Software Developer",
         TimeSpent: "Jan 2024 – Present",
         Description: [
-          "Revamped React to Next.js web app, for intuitive navigation and 20% faster loading.",
-          "Deployed web app to Firebase for seamless scalability and management.",
-          "Enhanced user experience with dynamic features and animations, leading to a 15% increase in user engagement.",
-          "Streamlined onboarding process, enabling new developers to integrate and contribute 25% faster.",
+          "Revamped React to Next.js web app, enhancing navigation and reducing load time by 20%, improving user retention",
+          "Deployed web app to Firebase, ensuring seamless scalability and management, resulting in a 30% increase in handling traffic",
+          "Enhanced user experience with dynamic features and animations, leading to a 15% increase in user engagement",
+          "Streamlined onboarding process, enabling new developers to integrate and contribute 25% faster",
         ],
         id: 1,
       },
@@ -271,13 +271,13 @@ const Data = {
         Role: "Software Developer",
         TimeSpent: "Jan 2023 – 2024",
         Description: [
-          `Collaborated with cross-functional teams in enhancing product responsiveness, accessibility, and UI design through
-          rigorous user tests and A/B testing, resulting in a 20% boost in user satisfaction`,
-          `Developed React functional components from scratch, seamlessly integrating them into the existing legacy code base to
-          optimize the user experience and reduce UI bugs`,
-          `Refactored a secure Node.js with Express.js back-end server, integrating user authentication and access control for
-          protected pages`,
-          "Developed REST APIs for efficient user data communication between the front-end and back-end, while integrating MongoDB to ensure secure storage of sensitive information",
+          `Collaborated with cross-functional teams to enhance product responsiveness by 20%, accessibility by 15%, and user
+          satisfaction by 20% through rigorous user tests and A/B testing`,
+          `Developed and implemented new React functional components from scratch, optimizing the user experience and reducing
+          UI bugs by 30%`,
+          `Refactored a secure Node.js with Express.js back-end server, improving performance by 10% and reducing maintenance
+          costs by 20%`,
+          "Developed REST APIs for efficient user data communication, integrating MongoDB to ensure secure storage, increasing data retrieval speed by 25%",
         ],
         id: 2,
       },
@@ -286,12 +286,12 @@ const Data = {
         Role: "Software Developer",
         TimeSpent: "Sep 2022 – Dec 2022",
         Description: [
-          `Revamped UI designs and mock-ups using Figma, resulting in a 70% increase in user adoption rates`,
-          `Addressed performance issues, implementing optimization techniques, including image compression, lazy loading, and
-          caching for a 10% faster page load`,
-          `Successfully integrated York University’s Duo authentication system, strengthening web security and ensuring secure
-          access, resulting in a significant 60% reduction in false tutor appointments`,
-          "Transformed the back-end with Node.js and Express to flawlessly manage front-end requests from 500+ students, averting crashes and ensuring uninterrupted service",
+          `Identified and addressed performance bottlenecks, implementing optimization techniques such as image compression, lazy
+          loading, and caching, resulting in a 10% faster page load time`,
+          `Revamped UI designs and mock-ups using Figma, increasing user adoption rates by 70% and reducing support tickets by
+          10%`,
+          `Integrated York University’s Duo authentication, enhancing security and reducing false tutor appointments by 60%`,
+          "Transformed the back-end with Node.js and Express to flawlessly manage front-end requests from over 500 students, ensuring uninterrupted service and reducing request handling time by 15%",
         ],
         id: 3,
       },
@@ -506,6 +506,20 @@ const Data = {
   projects, sharing insights, or simply saying hello, I'm eager to
   connect and explore how we can work together to create innovative
   solutions. Let's connect and build something remarkable!`,
+  ChatBot: {
+    catch: [
+      "Hi there! Have questions about my experience or skills? Talk to my pal!",
+      "Welcome! Curious about my professional background? Talk to my pal!",
+      "Hello! Want to learn more about my expertise? Talk to my pal!",
+      "Hey! Interested in my qualifications? Talk to my pal!",
+      "Hi! Have any inquiries about my career or skills? Talk to my pal!",
+      "Welcome! Need details about my work experience? Talk to my pal!",
+      "Hello! Looking for information on my skills? Talk to my pal!",
+      "Hey! Have questions about my professional journey? Talk to my pal!",
+      "Hi there! Want to know more about my qualifications? Talk to my pal!",
+      "Hello! Need to learn about my experience? Talk to my pal!",
+    ],
+  },
 };
 
 export default Data;

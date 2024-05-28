@@ -35,6 +35,7 @@
 .chatTitle {
   font-size: large;
   font-weight: 700;
+  text-align: center;
 }
 
 .botInfo {

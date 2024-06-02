@@ -10,11 +10,12 @@ import Contact from "./Component/Contact/Contact";
 import Footer from "./Component/Footer/Footer";
 import Data from "./Data/Data";
 import ChatBot from "./Component/Chat_Bot/chatBot";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
-  
   return (
     <>
+      <Analytics />
       <Header hLinks={Data.header.hLinks} />
       <ChatBot />
       <HomeIntro typer={Data.Home_Intro.typer} />

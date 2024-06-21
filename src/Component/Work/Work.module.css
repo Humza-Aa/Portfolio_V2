@@ -39,10 +39,11 @@
 .projectImg {
   display: flex;
   align-items: center;
+  width: 40%;
 }
 
 .projectImg > img {
- width: 100%;
+ width: 90%;
  border-radius: 10px;
 }
 

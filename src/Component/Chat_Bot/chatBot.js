@@ -42,9 +42,9 @@ const Chatbot = () => {
     }
   };
 
-  useEffect(() => {
-    sendMessageToBackend("Site Opened", 'loc');
-  }, []);
+  // useEffect(() => {
+  //   sendMessageToBackend("Site Opened", 'loc');
+  // }, []);
 
   return (
     <div ref={chatContainerRef} className={styles.container}>

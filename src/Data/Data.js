@@ -4,6 +4,7 @@ import CrimeVue from "../Component/Work/App_Images/CrimeVue.png";
 import FactCheck from "../Component/Work/App_Images/FactCheck.png";
 import Astro from "../Component/About_Tools/Tools_data/Images/Astro.png";
 import Vercel from "../Component/About_Tools/Tools_data/Images/Vercel.png";
+import Portfolio_Pal from "../Component/Work/App_Images/Portfolio-Pal.png";
 import projectStyles from "../Component/Work/Work.module.css";
 
 const Data = {
@@ -51,9 +52,8 @@ const Data = {
     Summary: [
       <>
         Hey there, I'm <span className={homeSummarystyles.myName}>Humza</span>
-        —an avid software developer fueled by a passion for crafting immersive
-        digital experiences. My coding adventure kicked off three years ago when
-        I discovered{" "}
+        —a passionate software developer dedicated to creating immersive digital
+        experiences. My coding journey began five years ago with
         <span className={homeSummarystyles.projectName}>
           <a
             href="https://www.theodinproject.com/"
@@ -63,10 +63,10 @@ const Data = {
             The Odin Project
           </a>
         </span>
-        , and ever since, my love for programming has only grown stronger.
+        , sparking a love for programming that continues to grow.
       </>,
       <>
-        Currently, I'm part of the dynamic team at{" "}
+        Currently, I'm a key player at{" "}
         <span className={homeSummarystyles.projectName}>
           <a
             href="https://cascadiacarbon.com/"
@@ -76,20 +76,23 @@ const Data = {
             Cascadia Carbon
           </a>
         </span>
-        , where I merge technology with purpose. Whether it's bringing
-        single-page wonders to life or orchestrating intricate full stack
-        marvels, I thrive on translating ideas into digital reality.
+        , where I blend technology with purpose. Here, I've enhanced user
+        engagement by 15% and improved app performance by 20% through dynamic
+        feature development and efficient deployments. My expertise spans
+        single-page applications to full-stack solutions, always striving to
+        transform innovative ideas into digital realities.
       </>,
       <>
-        Recently armed with a Bachelor's in{" "}
-        <span className={homeSummarystyles.degree}>Computer Engineering</span>,
-        I'm on a mission for growth that knows no bounds. Exploring the
-        fascinating worlds of cloud computing and AI, I'm all about the perfect
-        mix of creativity and skill.
+        With a Bachelor's in{" "}
+        <span className={homeSummarystyles.degree}>Computer Engineering</span>{" "}
+        from York University, I'm committed to continuous learning and growth,
+        diving into cloud computing and AI to further hone my skills. My
+        technical toolkit includes Python, JavaScript, React, and AWS, to name a
+        few.
       </>,
       <>
-        In addition to my journey, I've also taken up a mission to make a
-        difference. Allow me to introduce you to{" "}
+        Beyond professional achievements, I actively pursue projects that make a
+        difference.{" "}
         <span className={homeSummarystyles.appName}>
           <a
             href="https://crimevue.vercel.app/"
@@ -99,8 +102,8 @@ const Data = {
             'CrimeVue'
           </a>
         </span>
-        —a project close to my heart, meticulously gathering and visualizing
-        crime data to help build safer communities. And meet{" "}
+        is one such endeavor—an application that analyzes crime data to foster
+        safer communities. Another project close to my heart is{" "}
         <span className={homeSummarystyles.appName}>
           <a
             href="https://github.com/Humza-Aa/AI_Chat_App"
@@ -110,9 +113,12 @@ const Data = {
             'My Portfolio Pal'
           </a>
         </span>
-        —an AI chatbot trained on my experiences, here to answer any questions
-        you might have about me. Let's embark on this meaningful journey
-        together, shaping the world for the better.
+        , an AI chatbot designed to answer questions about my journey and
+        experiences, streamlining communication and engagement.
+      </>,
+      <>
+        Let's connect and embark on a journey to shape the digital world for the
+        better.
       </>,
     ],
   },
@@ -300,6 +306,53 @@ const Data = {
   Projects: {
     //Work
     projects: [
+      {
+        name: "My Portfolio Pal",
+        description: (
+          <>
+            The AI Portfolio Chatbot is an{" "}
+            <span className={projectStyles.highlight}>innovative solution</span>{" "}
+            designed to streamline{" "}
+            <span className={projectStyles.highlight}>
+              recruiter communication
+            </span>{" "}
+            and enhance{" "}
+            <span className={projectStyles.highlight}>user interaction</span>.
+            By utilizing <span className={projectStyles.highlight}>Python</span>{" "}
+            and <span className={projectStyles.highlight}>Flask</span>, this
+            chatbot intelligently answers inquiries, resulting in a{" "}
+            <span className={projectStyles.highlight}>30% reduction</span> in
+            recruiter inquiries and a{" "}
+            <span className={projectStyles.highlight}>40% increase</span> in
+            engagement. The model, built with a{" "}
+            <span className={projectStyles.highlight}>
+              feedforward neural network
+            </span>
+            , achieved an{" "}
+            <span className={projectStyles.highlight}>accuracy</span> exceeding{" "}
+            <span className={projectStyles.highlight}>90%</span> after{" "}
+            <span className={projectStyles.highlight}>200 epochs</span> of
+            training, offering a{" "}
+            <span className={projectStyles.highlight}>seamless experience</span>{" "}
+            for users.
+          </>
+        ),
+        img: Portfolio_Pal,
+        tools: [
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg",
+          Vercel,
+        ],
+        links: {
+          github: "https://github.com/Humza-Aa/AI_Chat_App",
+          Live: "https://humza-aamir.vercel.app/",
+        },
+      },
       {
         name: "CrimeVue",
         description: (

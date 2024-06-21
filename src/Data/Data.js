@@ -352,6 +352,7 @@ const Data = {
           github: "https://github.com/Humza-Aa/AI_Chat_App",
           Live: "https://humza-aamir.vercel.app/",
         },
+        class: "vertical",
       },
       {
         name: "CrimeVue",

@@ -310,9 +310,8 @@ const Data = {
         name: "My Portfolio Pal",
         description: (
           <>
-            The AI Portfolio Chatbot is an{" "}
-            <span className={projectStyles.highlight}>innovative solution</span>{" "}
-            designed to streamline{" "}
+            The AI Portfolio Chatbot is an innovative solution designed to
+            streamline{" "}
             <span className={projectStyles.highlight}>
               recruiter communication
             </span>{" "}
@@ -328,8 +327,7 @@ const Data = {
             <span className={projectStyles.highlight}>
               feedforward neural network
             </span>
-            , achieved an{" "}
-            <span className={projectStyles.highlight}>accuracy</span> exceeding{" "}
+            , achieved an accuracy exceeding{" "}
             <span className={projectStyles.highlight}>90%</span> after{" "}
             <span className={projectStyles.highlight}>200 epochs</span> of
             training, offering a{" "}
@@ -399,6 +397,7 @@ const Data = {
           github: "https://github.com/Humza-Aa/Ontario_Crime_Mapper",
           Live: "https://crimevue.vercel.app/",
         },
+        class: "horizontal",
       },
       {
         name: "Fact Checking Central",
@@ -447,6 +446,7 @@ const Data = {
             "https://github.com/mustaffaimran/FactCheckingCapstoneProject",
           Live: "https://mustaffaimran.github.io/",
         },
+        class: "horizontal",
       },
     ],
     smallProjects: [

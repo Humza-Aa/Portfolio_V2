@@ -17,7 +17,7 @@ export default function Work(props) {
             return (
               <>
                 <div key={key} className={styles.projectDiv}>
-                  <div className={styles.projectImg}>
+                  <div className={styles[project.class]}>
                     <img src={project.img} alt={project.name} />
                   </div>
                   <div className={styles.projectInfo}>

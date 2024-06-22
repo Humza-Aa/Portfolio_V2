@@ -22,10 +22,10 @@
 }
 
 .projectsLists {
-  display: flex; 
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 4rem;  
+  gap: 4rem;
 }
 
 .projectDiv {
@@ -34,17 +34,28 @@
   border-radius: 10px;
   height: fit-content;
   padding: 10px;
+  justify-content: center;
 }
 
 .projectImg {
   display: flex;
   align-items: center;
-  width: 40%;
+  /* width: 40%; */
 }
 
-.projectImg > img {
+/* .projectImg > img {
  width: 90%;
  border-radius: 10px;
+} */
+
+.vertical > img {
+  width: 90%;
+  border-radius: 10px;
+}
+
+.horizontal > img {
+  width: 90%;
+  border-radius: 10px;
 }
 
 .projectInfo {
@@ -72,7 +83,7 @@
   color: var(--LBI);
 }
 
-.toolsImg{
+.toolsImg {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -95,8 +106,8 @@
   text-decoration: none;
 }
 
-
-.githubLink, .liveLinkDiv {
+.githubLink,
+.liveLinkDiv {
   display: flex;
   align-items: center;
   border-radius: 10px;
@@ -105,14 +116,15 @@
   padding: 10px;
 }
 
-.githubLink > svg{
+.githubLink > svg {
   width: 25px;
   height: 25px;
 }
 
-.githubLink > div, .liveLinkDiv > div {
+.githubLink > div,
+.liveLinkDiv > div {
   font-weight: 600;
-  color: var(--LBI)
+  color: var(--LBI);
 }
 
 .liveLink {
@@ -121,7 +133,8 @@
   color: var(--LBI);
 }
 
-.githubLink:hover, .liveLinkDiv:hover {
+.githubLink:hover,
+.liveLinkDiv:hover {
   cursor: pointer;
   background-color: rgb(136, 134, 134);
 }
@@ -150,7 +163,7 @@
     padding: 0;
     text-align: center;
   }
-  
+
   .projectInfo {
     max-width: none;
   }

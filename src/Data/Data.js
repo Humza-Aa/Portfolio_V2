@@ -516,7 +516,7 @@ const Data = {
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
         ],
         links: {
-          github: "https://github.com/Humza-Aa/Google_Playstore_Review_Scraper",
+          github: "https://github.com/Humza-Aa/ETCH-A-SKETCH",
           Live: "https://humza-aa.github.io/ETCH-A-SKETCH/",
         },
       },

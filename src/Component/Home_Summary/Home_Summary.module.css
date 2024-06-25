@@ -51,6 +51,7 @@
 
 .projectName, .myName, .appName, .degree {
   color: var(--Text);
+  padding: 0 3px;
 }
 
 .projectName > a, .appName > a {

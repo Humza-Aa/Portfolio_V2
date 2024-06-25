@@ -43,7 +43,7 @@ const Chatbot = () => {
   };
 
   useEffect(() => {
-    sendMessageToBackend("Site Opened", 'loc');
+    sendMessageToBackend("Site Opened", "loc");
   }, []);
 
   return (

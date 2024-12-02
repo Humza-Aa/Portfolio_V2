@@ -47,7 +47,7 @@ export default function Footer() {
             <a
               target="_blank"
               rel="noreferrer noopener"
-              href="mailto:humzaaamir31@gmail.com"
+              href="mailto:humzaa.dev@gmail.com"
             >
               <div className={styles.emailLink}>
                 <FontAwesomeIcon icon={faEnvelope} />

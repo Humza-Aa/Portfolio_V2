@@ -261,16 +261,28 @@ const Data = {
   WorkLayout: {
     workData: [
       {
+        WorkPlace: "myWellaBee",
+        Role: "Data Engineer",
+        TimeSpent: "Sep 2024 – Present",
+        Description: [
+          "Optimized product data integration by consolidating and cleaning data from multiple online stores for API upload, boosting operational efficiency and achieving a 98% improvement in data accuracy",
+          "Enhanced data reliability and quality for consumer-facing applications, supporting the company’s goal to offer accurate product details and foster trust in its digital platform",
+          "Integrated geolocation services to personalize user experiences, improving search relevance and driving a 25% increase in store visits",
+          "Redesigned key UI components for the company's store-finding feature, enhancing user experience and increasing customer engagement rates by 20%",
+        ],
+        id: 1,
+      },
+      {
         WorkPlace: "Cascadia Carbon",
         Role: "Software Developer",
-        TimeSpent: "Jan 2024 – Present",
+        TimeSpent: "Jan 2024 – Sep 2024",
         Description: [
           "Revamped React to Next.js web app, enhancing navigation and reducing load time by 20%, improving user retention",
           "Deployed web app to Firebase, ensuring seamless scalability and management, resulting in a 30% increase in handling traffic",
           "Enhanced user experience with dynamic features and animations, leading to a 15% increase in user engagement",
           "Streamlined onboarding process, enabling new developers to integrate and contribute 25% faster",
         ],
-        id: 1,
+        id: 2,
       },
       {
         WorkPlace: "Project Human City",
@@ -285,7 +297,7 @@ const Data = {
           costs by 20%`,
           "Developed REST APIs for efficient user data communication, integrating MongoDB to ensure secure storage, increasing data retrieval speed by 25%",
         ],
-        id: 2,
+        id: 3,
       },
       {
         WorkPlace: "Excel Lassonde",
@@ -299,7 +311,7 @@ const Data = {
           `Integrated York University’s Duo authentication, enhancing security and reducing false tutor appointments by 60%`,
           "Transformed the back-end with Node.js and Express to flawlessly manage front-end requests from over 500 students, ensuring uninterrupted service and reducing request handling time by 15%",
         ],
-        id: 3,
+        id: 4,
       },
     ],
   },

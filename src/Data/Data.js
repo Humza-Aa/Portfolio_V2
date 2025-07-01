@@ -51,9 +51,12 @@ const Data = {
   HomeSummary: {
     Summary: [
       <>
-        Hey there, I'm <span className={homeSummarystyles.myName}>Humza</span>
-        —a passionate software developer dedicated to creating immersive digital
-        experiences. My coding journey began five years ago with
+        Hey, I'm <span className={homeSummarystyles.myName}>Humza</span>— a
+        software developer driven to turn ideas into innovative, real-world
+        applications.
+      </>,
+      <>
+        My journey began 3 years ago with{" "}
         <span className={homeSummarystyles.projectName}>
           <a
             href="https://www.theodinproject.com/"
@@ -63,62 +66,45 @@ const Data = {
             The Odin Project
           </a>
         </span>
-        , sparking a love for programming that continues to grow.
-      </>,
-      <>
-        Currently, I'm a key player at{" "}
-        <span className={homeSummarystyles.projectName}>
-          <a
-            href="https://cascadiacarbon.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Cascadia Carbon
-          </a>
-        </span>
-        , where I blend technology with purpose. Here, I've enhanced user
-        engagement by 15% and improved app performance by 20% through dynamic
-        feature development and efficient deployments. My expertise spans
-        single-page applications to full-stack solutions, always striving to
-        transform innovative ideas into digital realities.
+        , sparking a love for code that keeps growing. I specialize in building
+        single-page apps and full-stack solutions, turning innovative ideas into
+        real-world applications.
       </>,
       <>
         With a Bachelor's in{" "}
-        <span className={homeSummarystyles.degree}>Computer Engineering</span>{" "}
-        from York University, I'm committed to continuous learning and growth,
-        diving into cloud computing and AI to further hone my skills. My
-        technical toolkit includes Python, JavaScript, React, and AWS, to name a
-        few.
+        <span className={homeSummarystyles.degree}>
+          Computer Engineering <span style={{ color: "white" }}>,</span>
+        </span>{" "}
+        I’m continuously expanding my skills — recently exploring cloud
+        computing and AI. My toolkit includes Python, JavaScript, React, and
+        AWS, among others.
       </>,
       <>
-        Beyond professional achievements, I actively pursue projects that make a
-        difference.{" "}
+        I enjoy working on projects that make a difference.{" "}
         <span className={homeSummarystyles.appName}>
           <a
             href="https://crimevue.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
-            'CrimeVue'
+            CrimeVue
           </a>
         </span>
-        is one such endeavor—an application that analyzes crime data to foster
-        safer communities. Another project close to my heart is{" "}
+        , for example, analyzes crime data to promote safer communities.
         <span className={homeSummarystyles.appName}>
           <a
             href="https://github.com/Humza-Aa/AI_Chat_App"
             target="_blank"
             rel="noreferrer"
           >
-            'My Portfolio Pal'
+            My Portfolio Pal
           </a>
         </span>
-        , an AI chatbot designed to answer questions about my journey and
-        experiences, streamlining communication and engagement.
+        , an AI chatbot, helps others connect with my work and journey.
       </>,
       <>
-        Let's connect and embark on a journey to shape the digital world for the
-        better.
+        I’m excited to collaborate on projects that shape the digital world for
+        the better — let’s connect!
       </>,
     ],
   },

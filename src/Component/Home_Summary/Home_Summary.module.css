@@ -55,7 +55,8 @@
 }
 
 .projectName > a, .appName > a {
-  text-decoration: underline;
+  text-decoration: none;
+  font-weight: bold;
   color: var(--Text);
 
 }
